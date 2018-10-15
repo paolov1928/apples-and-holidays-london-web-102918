@@ -78,11 +78,11 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
 
 #Iterate through to the IF BBQ level and then go back to a new array with its holiday name. Or use index like i used previous
-
+h = []
 holiday_hash.each do |season,v|
   v.each do |holiday,supplies|
     if supplies.include?("BBQ")
-      return holiday
+      h << holiday
 end
 end
 end
